@@ -8,25 +8,25 @@ set -e
 
 #  Specify the externally facing address for this IdP. Typically you would have
 #  a DNS entry for this. Do *NOT* use 'localhost' or any other local address.
-#HOST_NAME=idp.example.edu
+#HOST_NAME=idp.example.edu.sg
 
 #  The federation environment
-#  Allowable values: {test, production} (case-sensitive)
-#ENVIRONMENT=test
+#  Allowable values: {production} (case-sensitive)
+#ENVIRONMENT=production
 
 #  Your Organisation's name
 #ORGANISATION_NAME="The University of Example"
 
 #  The base domain for your organisation
-#ORGANISATION_BASE_DOMAIN=example.edu
+#ORGANISATION_BASE_DOMAIN=example.edu.sg
 
 #  Your schacHomeOrganizationType.
 #  See http://www.terena.org/activities/tf-emc2/schacreleases.html
 #  Relevant values are:
-#   urn:mace:terena.org:schac:homeOrganizationType:au:university
-#   urn:mace:terena.org:schac:homeOrganizationType:au:research-institution
-#   urn:mace:terena.org:schac:homeOrganizationType:au:other
-#HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:au:university
+#   urn:mace:terena.org:schac:homeOrganizationType:sg:university
+#   urn:mace:terena.org:schac:homeOrganizationType:sg:research-institution
+#   urn:mace:terena.org:schac:homeOrganizationType:sg:other
+#HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:sg:university
 
 #  The attribute used for AuEduPersonSharedToken and EduPersonTargetedId
 #  generation.
@@ -70,11 +70,11 @@ CREDENTIAL_BACKUP_PATH=$ASSETS/idp/credentials
 LDAP_PROPERTIES=$ASSETS/idp/conf/ldap.properties
 APACHE_IDP_CONFIG=$ASSETS/apache/idp.conf
 
-GIT_REPO=https://github.com/ausaccessfed/shibboleth-idp-installer.git
-GIT_BRANCH=master
+GIT_REPO=https://github.com/spgreen/shibboleth-idp-installer.git
+GIT_BRANCH=SGAF-Implementation
 
-FR_TEST_REG=https://manager.test.aaf.edu.au/federationregistry/registration/idp
-FR_PROD_REG=https://manager.aaf.edu.au/federationregistry/registration/idp
+
+FR_PROD_REG=https://manager.sgaf.org.sg/federationregistry/registration/idp
 
 function ensure_mandatory_variables_set {
   for var in HOST_NAME ENVIRONMENT ORGANISATION_NAME ORGANISATION_BASE_DOMAIN \
