@@ -253,8 +253,9 @@ To make your IdP functional follow these steps:
    After completing this form, you will receive an email from the federation
    indicating your IdP is pending.
 
-   You should now continue with the installation steps documented at
-   http://ausaccessfed.github.io/shibboleth-idp-installer/installation.html
+   You should now continue with the installation steps within the 
+   AAF Shibboleth IdPv3 Installer modified for SGAF document
+   
 
 EOF
 }
@@ -269,9 +270,9 @@ function duplicate_execution_warning {
     echo -e "\n\n-----"
     echo "The bootstrap process has already been executed and could be destructive if run again."
     echo "It is likely you want to run an update instead."
-    echo "Please see http://ausaccessfed.github.io/shibboleth-idp-installer/customisation.html for further details."
+    echo "Please see the Customisation section of the AAF Shibboleth IdPv3 Installer modified for SGAF document for further details."
     echo -e "\n\nIn certain cases you may need to re-run the bootstrap process if you've made an error during initial installation."
-    echo "Please see http://ausaccessfed.github.io/shibboleth-idp-installer/installation.html to disable this warning."
+    echo "Please see the Installation section of the AAF Shibboleth IdPv3 Installer modified for SGAF document to disable this warning."
     echo -e "-----\n\n"
     exit 0
   fi
