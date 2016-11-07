@@ -34,5 +34,5 @@ home_organisation: "example.edu.sg"
 home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:sg:university"
 
 # The federation's group id used for metadata-based attribute filtering
-federation_group_id: "http://ds.sgaf.org.sg/distribution/metadata/metadata.aaf.signed.complete.xml"
+federation_group_id: "sgaf.singaren.net.sg"
 
