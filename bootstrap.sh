@@ -96,7 +96,7 @@ APACHE_IDP_CONFIG=$ASSETS/apache/idp.conf
 ACTIVITY_LOG=$INSTALL_BASE/shibboleth-idp-installer/activity.log
 
 GIT_REPO=https://github.com/spgreen/shibboleth-idp-installer.git
-GIT_BRANCH=SGAF-Implementation-Update
+GIT_BRANCH=SGAF-Implementation
 
 FR_PROD_REG=https://manager.sgaf.org.sg/federationregistry/registration/idp
 
