@@ -1,6 +1,6 @@
 ---
 # ------------------------------------------------------------------------------
-# EXAMPLE: CONFIGURED FOR AAF PRODUCTION ENVIRONMENT
+# EXAMPLE: CONFIGURED FOR SGAF PRODUCTION ENVIRONMENT
 # ------------------------------------------------------------------------------
 
 # The host name of the target machine
@@ -13,11 +13,11 @@ idp_entity_id: "https://idp.example.edu.sg/idp/shibboleth"
 idp_attribute_scope: "example.edu.sg"
 
 # Shared federation metadata
-metadata_url: "http://ds.sgaf.org.sg/distribution/metadata/metadata.aaf.signed.complete.xml"
+metadata_url: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
 
 # Shared federation certificate
-metadata_cert_url: "https://ds.sgaf.org.sg/distribution/metadata/metadata-cert.pem"
-metadata_cert_sha256sum: 255f82be1af8ce9711f30f4e9e62154692a20eef91ccdcc7debee47b3fb088c5
+metadata_cert_url: "https://ds.sgaf.org.sg/distribution/metadata/updated_metadata_cert.pem"
+metadata_cert_sha256sum: b632f2d22ef0476bc60b4d47603aaa070dcb8e5727cf4e1a134e4eec2aeb582e
 
 
 # Your organisation's name
@@ -34,5 +34,7 @@ home_organisation: "example.edu.sg"
 home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:sg:university"
 
 # The federation's group id used for metadata-based attribute filtering
-federation_group_id: "sgaf.singaren.net.sg"
+federation_group_id: "http://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
 
+# Run yum -update on every execution of update_idp.sh
+server_patch: "true"
