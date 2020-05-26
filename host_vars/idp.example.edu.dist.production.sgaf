@@ -1,0 +1,40 @@
+---
+# ------------------------------------------------------------------------------
+# EXAMPLE: CONFIGURED FOR SGAF PRODUCTION ENVIRONMENT
+# ------------------------------------------------------------------------------
+
+# The host name of the target machine
+idp_host_name: "idp.example.edu.sg"
+
+# IdP Entity ID
+idp_entity_id: "https://idp.example.edu.sg/idp/shibboleth"
+
+# IdP 'Attribute Scope'
+idp_attribute_scope: "example.edu.sg"
+
+# Shared federation metadata
+metadata_url: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
+
+# Shared federation certificate
+metadata_cert_url: "https://ds.sgaf.org.sg/distribution/metadata/updated_metadata_cert.pem"
+metadata_cert_sha256sum: b632f2d22ef0476bc60b4d47603aaa070dcb8e5727cf4e1a134e4eec2aeb582e
+
+
+# Your organisation's name
+organisation_name: "The University of Example"
+
+# Your schacHomeOrganization. See http://www.terena.org/activities/tf-emc2/schacreleases.html
+home_organisation: "example.edu.sg"
+
+# Your schacHomeOrganizationType. See http://www.terena.org/activities/tf-emc2/schacreleases.html
+# Relevant values are:
+# urn:mace:terena.org:schac:homeOrganizationType:sg:university
+# urn:mace:terena.org:schac:homeOrganizationType:sg:research-institution
+# urn:mace:terena.org:schac:homeOrganizationType:sg:other
+home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:sg:university"
+
+# The federation's group id used for metadata-based attribute filtering
+federation_group_id: "http://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
+
+# Run yum -update on every execution of update_idp.sh
+server_patch: "true"
