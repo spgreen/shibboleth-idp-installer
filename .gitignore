@@ -8,3 +8,7 @@ assets/*
 .vagrant
 Vagrantfile
 vagrant_id_rsa
+**/*.swp
+.DS_Store
+.idea/
+rapid-idp-migrate/rapid-idp-migrate*.jar
