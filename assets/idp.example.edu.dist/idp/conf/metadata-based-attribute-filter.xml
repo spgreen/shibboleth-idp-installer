@@ -4,7 +4,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:mace:shibboleth:2.0:afp http://shibboleth.net/schema/idp/shibboleth-afp.xsd">
 
-  <AttributeFilterPolicy id="aaf.edu.au">
+  <AttributeFilterPolicy id="sgaf.org.sg">
 
       <PolicyRequirementRule xsi:type="InEntityGroup"
                                  groupID="{{ federation_group_id }}" />

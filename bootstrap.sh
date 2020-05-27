@@ -156,7 +156,8 @@ ACTIVITY_LOG=$INSTALL_BASE/shibboleth-idp-installer/activity.log
 GIT_REPO=https://github.com/spgreen/shibboleth-idp-installer.git
 GIT_BRANCH=SGAF-Implementation
 
-FR_PROD_REG=https://manager.sgaf.org.sg/federationregistry/registration/idp
+FR_TEST_REG=https://manager.sgaf.org.sg/rr3/
+FR_PROD_REG=https://manager.sgaf.org.sg/rr3/
 
 function ensure_mandatory_variables_set {
   for var in HOST_NAME ENVIRONMENT ORGANISATION_NAME ORGANISATION_BASE_DOMAIN \
