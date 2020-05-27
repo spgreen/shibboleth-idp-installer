@@ -199,7 +199,7 @@
     - name: 'Add edugain_metadata_url to host_vars if it does not exist'
       lineinfile:
         path: '{{ installer.repository }}/host_vars/{{inventory_hostname}}'
-        line: "\n# eduGAIN metadata\nedugain_metadata_url: \"https://md.aaf.edu.au/aaf-edugain-metadata.xml\""
+        line: "\n# eduGAIN metadata\nedugain_metadata_url: \"https://ds.sgaf.org.sg/distribution/metadata/sgaf-edugain.xml\""
         insertafter: EOF
       when: edugain_metadata_url is not defined
 

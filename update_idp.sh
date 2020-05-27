@@ -94,7 +94,7 @@ if [[ $response =~ ^(yes|y)$ ]]
 then
   if [[ $upgrade = true ]]
   then
-    echo -e "\nAttempting to update the AAF Installer respositry...\n"
+    echo -e "\nAttempting to update the SGAF Installer respositry...\n"
 
     git pull
 
@@ -103,7 +103,7 @@ then
     if [ $retval -ne 0 ]
     then
       echo -e "\n   ----"
-      echo -e "   An ERROR occurred attempting to upgrade the local AAF Installer respoitory"
+      echo -e "   An ERROR occurred attempting to upgrade the local SGAF Installer respoitory"
       echo -e "   This must be resolved before your upgrade can proceed!\n"
       echo -e "   Details of the issue are shown above."
       echo -e "   ----"
