@@ -19,6 +19,7 @@ metadata_url: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
 metadata_cert_url: "https://ds.sgaf.org.sg/distribution/metadata/updated_metadata_cert.pem"
 metadata_cert_sha256sum: b632f2d22ef0476bc60b4d47603aaa070dcb8e5727cf4e1a134e4eec2aeb582e
 
+
 # Your organisation's name
 organisation_name: "The University of Example"
 
@@ -33,22 +34,7 @@ home_organisation: "example.edu.sg"
 home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:sg:university"
 
 # The federation's group id used for metadata-based attribute filtering
-federation_group_id: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
+federation_group_id: "http://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
 
 # Run yum -update on every execution of update_idp.sh
 server_patch: "true"
-
-# Installed Firewall [firewalld | iptables | none ]
-firewall: "firewalld" 
-
-# Enable BackChannel
-enable_backchannel: "false"
-
-# eduGAIN metadata
-edugain_metadata_url: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-edugain.xml"
-
-# Enable eduGAIN
-enable_edugain: "false"
-
-# Enable shibcas
-enable_shibcas: "false"
